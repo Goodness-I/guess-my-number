@@ -21,7 +21,7 @@ const displayMessage = function (message) {
 };
 const displayGuess = function (guess) {
   // document.querySelector('.guess').value = '';
-  document.querySelector('.guess').textContent = guess;
+  document.querySelector('.guess').value = guess;
 };
 const displayScore = function (score) {
   document.querySelector('.score').textContent = score;
@@ -83,8 +83,7 @@ document.querySelector('.again').addEventListener('click', function () {
   displayScore(score);
   // document.querySelector('.number').textContent = '?';
   displayNumber('?');
-  // document.querySelector('.guess').value = '';
-  displayGuess(guess);
+  displayGuess('');
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
 });
