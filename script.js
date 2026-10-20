@@ -1,7 +1,7 @@
 'use strict';
 
 //Handling click events
-let secretNumber = Math.trunc(Math.random() * 50) + 1;
+let secretNumber = Math.trunc(Math.random() * 25) + 1;
 let score = 20;
 let highscore = 0;
 let isPlaying = true;
