@@ -72,14 +72,14 @@ document.querySelector('.again').addEventListener('click', function () {
 });
 
 //To allow the user to press the enter key to submit their guess, you can add an event listener for the 'keydown' event and check if the pressed key is 'Enter'. If it is, you can trigger the click event of the check button. Here's how you can implement this:
-document.addEventListener('keydown', function (enter) {
-  if (enter.key === 'Enter') {
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
     document.querySelector('.check').click();
   }
 });
 
-document.addEventListener('keydown', function (refresh) {
-  if (refresh.ctrlKey && refresh.key.toLowerCase() === 'r') {
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey && refresh.key.toLowerCase() === 'r') {
     refresh.preventDefault();
     document.querySelector('.again').click();
   }
